@@ -18,7 +18,13 @@
     .tooltip, // Firefox fix
     tooltip {
         &.background {
-            &, &.csd {
+            background-color: $tooltip_bg_color;
+            background-clip: padding-box;
+            border: 1px solid border_normal($tooltip_bg_color);
+            border-radius: 0;
+            color: $tooltip_fg_color;
+
+            &.csd {
                 background-color: $tooltip_bg_color;
                 background-clip: padding-box;
                 border: 1px solid border_normal($tooltip_bg_color);
